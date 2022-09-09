@@ -1,0 +1,43 @@
+.components {
+    &__datepicker {
+        .datepicker-container {
+            position: relative;
+
+            width: 86%;
+            cursor: pointer !important;
+            .open-button {
+                position: absolute;
+                top: 1px;
+                right: 2px;
+                pointer-events: none;
+
+                button {
+                    border: none;
+                    background: transparent;
+                }
+            }
+            .custom {
+                &-datepicker {
+                    width: 100%;
+                    padding: 6px;
+                    height: 30px !important;
+                    border-radius: 0.25rem;
+                }
+            }
+            .react {
+                &-datepicker-wrapper {
+                    display: inline-block;
+                    padding: 0;
+                    border: 0;
+                    width: 100%;
+                }
+
+                &-datepicker__input-container {
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

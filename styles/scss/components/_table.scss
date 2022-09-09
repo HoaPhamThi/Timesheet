@@ -1,0 +1,155 @@
+.components {
+    &__table {
+        &-wrapper {
+            overflow-x: auto !important;
+        }
+
+        &-border {
+            border: 1px solid $color-white-gray;
+            border-collapse: collapse;
+            thead {
+                th {
+                    background-color: color-blue-opacity(0.1);
+                    border: 1px solid $color-white-gray;
+                    position: relative;
+                    line-height: 1;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    white-space: pre !important;
+                }
+            }
+
+            tbody {
+                tr {
+                    &:nth-child(odd) {
+                        background-color: $color-white-lighten;
+                    }
+
+                    &:nth-child(even) {
+                        background-color: $color-white;
+                    }
+
+                    td {
+                        border: 1px solid $color-white-gray;
+                        line-height: 1;
+
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        white-space: initial;
+                        text-overflow: ellipsis;
+                    }
+
+                    &:hover {
+                        background-color: $color-blue-white;
+                    }
+                }
+            }
+        }
+
+        &-link {
+            color: $color-blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        &--top-table {
+            display: flex;
+            align-items: center;
+        }
+
+        &-btn {
+            margin: auto;
+            font-size: 14px !important;
+
+            img {
+                margin-right: 0;
+            }
+
+            &_body {
+                padding-top: 11px !important;
+                padding-bottom: 11px !important;
+            }
+        }
+
+        &-btn_link {
+            margin: auto;
+            background: none !important;
+            font-size: 14px !important;
+            color: $color-blue !important;
+            text-decoration: underline;
+            cursor: pointer;
+
+            .bases-list--overflow {
+                max-width: 520px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        &-btn_list {
+            margin: auto;
+            font-size: 14px !important;
+            background: none !important;
+            width: 80px !important;
+            padding: 5px !important;
+            color: $color-dark-black !important;
+            position: relative;
+
+            &:hover {
+                color: $color-blue !important;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 1px;
+                height: 16px;
+                width: 1px;
+                background-color: black;
+            }
+
+            &:last-child {
+                &:after {
+                    width: 0px;
+                }
+            }
+        }
+
+        &-sorted {
+            margin-right: 20px !important;
+            display: inline-block !important;
+
+            &-icon {
+                cursor: pointer;
+                position: absolute;
+                top: calc(50% - 6px);
+                right: 4px;
+                width: 16px;
+                height: 14px;
+            }
+        }
+
+        &-sticky {
+            tr {
+                th:first-child,
+                td:first-child {
+                    position: sticky;
+                    left: -1px;
+                    z-index: 1;
+                }
+            }
+
+            &-border {
+                tr {
+                    th:first-child,
+                    td:first-child {
+                        border-left: none !important;
+                        border-right: none !important;
+                        box-shadow: inset -1px 0 0 0 $color-white-gray, inset 1px 0 0 0 $color-white-gray;
+                    }
+                }
+            }
+        }
+    }
+}

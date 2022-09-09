@@ -1,0 +1,22 @@
+.pages__404 {
+    margin: auto;
+    height: 100vh;
+    width: 400px;
+    position: relative;
+    text-align: center;
+    color: $color-black;
+    &-err {
+        font-size: 11rem;
+        position: absolute;
+        top: 8%;
+    }
+    &-msg {
+        font-size: 1.6rem;
+        position: absolute;
+        top: 45%;
+        width: 75%;
+        &_link:hover {
+            color: $color-red;
+        }
+    }
+}

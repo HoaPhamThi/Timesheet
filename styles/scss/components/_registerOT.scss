@@ -1,0 +1,12 @@
+.components {
+    &__register-ot {
+        .text-note {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: $color-dark-black;
+            p {
+                font-style: italic;
+                padding-left: 15px;
+            }
+        }
+    }
+}

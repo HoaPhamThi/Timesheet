@@ -1,0 +1,17 @@
+.components {
+    &__form {
+        &_forget {
+            &-input {
+                display: contents;
+            }
+            &-check_in,
+            &-check_out {
+                width: 25% !important;
+                margin-right: 10px;
+            }
+            .flex-grow-1 {
+                display: contents;
+            }
+        }
+    }
+}

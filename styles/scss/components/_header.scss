@@ -1,0 +1,41 @@
+.components {
+    &__header {
+        background-color: $color-black;
+        padding: 20px 0 20px 0;
+
+        .container {
+            color: $color-white;
+
+            .heading {
+                &-start {
+                    padding: 10px;
+                }
+
+                padding: 10px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    margin: 5px 0 0 10px;
+                    height: 16px;
+                    width: 1px;
+                    background-color: $color-white !important;
+                }
+
+                &:hover {
+                    color: $color-blue;
+                    cursor: pointer;
+                }
+
+                &-end {
+                    padding: 10px;
+                    &:hover {
+                        color: $color-blue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

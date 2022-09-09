@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <g transform="matrix(-1, 0, 0, -1, 10.496, 10)">
+      <path d="M 8.214 8.825 L 5.298 5 L 8.214 1.175 L 7.316 0 L 3.496 5 L 7.316 10 L 8.214 8.825 Z" fill="#222222"/>
+      <path d="M 10.496 8.825 L 7.58 5 L 10.496 1.175 L 9.598 0 L 5.778 5 L 9.598 10 L 10.496 8.825 Z" fill="#222222"/>
+    </g>
+  </g>
+  <g/>
+</svg>

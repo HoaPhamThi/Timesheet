@@ -1,0 +1,134 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    overflow-y: overlay;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: unset;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+.row {
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+
+.bottom-0 {
+    bottom: 0 !important;
+}
+
+::placeholder {
+    color: $color-black !important;
+    opacity: 0.32 !important;
+}
+
+:-ms-input-placeholder {
+    color: $color-black !important;
+    opacity: 0.32 !important;
+}
+
+::-ms-input-placeholder {
+    color: $color-black !important;
+    opacity: 0.32 !important;
+}
+
+body {
+    &.modal-open {
+        padding-right: unset !important;
+    }
+
+    .fade {
+        transition: unset !important;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $color-black;
+}
+
+body::-webkit-scrollbar-track {
+    position: absolute;
+    right: -3rem;
+    top: -50rem;
+    background: transparent;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
+
+input,
+select,
+optgroup,
+textarea {
+    line-height: unset !important;
+    resize: none;
+}
+
+.title-request {
+    margin: 20px 20px 20px 20px;
+    background-color: #f8ffff;
+    border-radius: 0.3em;
+    font-size: 17px;
+    text-align: center;
+    color: #276f86;
+    box-shadow: inset 0 0 0 1px #a9d5de, 0 0 0 0 transparent;
+}
+
+.cancel-btn {
+    background: $color-white-gray !important;
+    color: $color-dark-black !important;
+
+    &:hover {
+        background: $color-smoke !important;
+    }
+}
+
+.submit-btn {
+    background: $color-blue-cloud !important;
+
+    &:hover {
+        background: $color-blue !important;
+    }
+}
+
+.react-datepicker__input-container input {
+    width: 100% !important;
+}
+
+.cancel-btn {
+    background: $color-white-gray !important;
+    color: $color-dark-black !important;
+
+    &:hover {
+        background: $color-smoke !important;
+    }
+}
+
+.submit-btn {
+    background: $color-blue-cloud !important;
+
+    &:hover {
+        background: $color-blue !important;
+    }
+}
+
+select:disabled {
+    opacity: 0.5;
+}

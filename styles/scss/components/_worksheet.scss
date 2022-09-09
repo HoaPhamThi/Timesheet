@@ -1,0 +1,7 @@
+@include responsive(xl) {
+    .components {
+        &__worksheet {
+            max-width: 1222px;
+        }
+    }
+}
